@@ -1,0 +1,14 @@
+.all{
+    padding:50px;
+    border: 2px solid gray;
+    margin: 35px;
+    text-align: center;
+}
+
+.all img{
+    width:200px;
+    height:150px;
+}
+.all {
+    text-decoration:none;
+} 
