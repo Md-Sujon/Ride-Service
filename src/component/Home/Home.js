@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './Home.css'
-
 
 
 const Home = (props) => {
@@ -12,20 +11,22 @@ const Home = (props) => {
     const handelClick=()=>{
       history.push('/destination')
     }
-    return (
-   
-<div className="MainCard" onClick={handelClick}>
 
-        {/* <Link to="/Login"> */}
-            
-           <div>
+    
+
+
+    return (
+      
+      <div  style={{border:'2px solid gray',margin:'20px',textAlign:'center'}} onClick={handelClick}>
+         
+                <div className="col-md-3">
              <h1>{name}</h1>
-               
-               <img src={photo} alt=''/> 
+              <img  src={photo}  style={{width:'250px',padding:'30px',margin:'10px'}} alt=''/> 
+              
                 </div>
-                {/* </Link> */}
+               
             
-               </div> 
+      </div> 
     );
 };
 

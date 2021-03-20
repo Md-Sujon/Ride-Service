@@ -11,7 +11,8 @@ const Rider = () => {
     },[])
         // console.log(riders);
     return (
-        <div className="body" style={{display:'flex'}}>
+        <div className="row" style={{display:'flex'}} >
+            
             
             {
               riders.map(Rider=><Home Rider={Rider}></Home>) 
