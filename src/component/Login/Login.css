@@ -1,3 +1,27 @@
 .login{
+    background-color: rgb(138, 168, 2);
     text-align: center;
+    border: 5px solid rgb(192, 94, 94);
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 580px;
+    padding: 10px;
 }
+.inputDisign{
+width: 300px;
+height: 50px;
+}
+.googlebtn{
+    width: 200px;
+    height: 50px;
+}
+.facebookbtn{
+    width: 200px;
+    height: 50px;
+}
+.mainbtn{
+    width: 200px;
+    height: 50px;
+    
+}
+

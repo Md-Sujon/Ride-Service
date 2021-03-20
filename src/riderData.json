@@ -1,15 +1,13 @@
-[
-    {
-   "photo": "https://image.bikebros.co.jp/bike_img/0/1973/2_l.jpg",
+[{
+   "avator": "https://i.ibb.co/0mqGZ6Q/image3.png",
     "name":"BIKE"
 }, {
-   "photo": "https://cdn.xl.thumbs.canstockphoto.com/city-bus-vector-clip-art_csp27939116.jpg",
-   "name":"CAR"
+   "avator": "https://i.ibb.co/x3tb51d/image2.png",
+   "name":"BUS"
 }, {
-    "photo": "https://m.media-amazon.com/images/I/514g87UbFPL._UY464_.jpg",
-    "name":"BUS"
+    "avator": "https://i.ibb.co/kQhXdjL/image1.png",
+    "name":"CAR"
   }, {
-    "photo": "https://srilankamirror.com/media/k2/items/cache/d01c04fcfe2ddfac12a508d441bf16b0_M.jpg?t=-62169984000",
+    "avator": "https://i.ibb.co/QDxWbBN/image.png",
     "name":"TRAIN"
- }
-]
+ }]

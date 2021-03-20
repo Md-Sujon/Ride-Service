@@ -1,0 +1,45 @@
+.from{
+    display: flex;
+    background-image:url('../images/Bg.png');
+    
+  }
+  
+  .input{
+      border: 1px solid rgb(70, 58, 58);
+      background-color: rgba(148, 99, 8, 0.671);
+     
+      width: 30%;
+      margin: 20px;
+      padding: 10px;
+      text-align: center;
+      height: fit-content;
+  }
+  .map{
+      /* border:1px solid red; */
+      background-image: url('../images/Map.png');
+      /* margin-right: 100px; */
+      background-size: cover;
+      width: 60%;
+      height: 600px;
+      margin: 20px;
+      text-align: center;
+      padding: 20px;
+  }
+  .map img{
+      width: 400px;
+      /* margin-left: 200px; */
+  }
+  .input{
+      width: 30%;
+      height: 50%;
+      border-radius: 30px;
+  }
+  .inputbox{
+width: 200px;
+height: 30px;
+
+  }
+  .Searchbox{
+      width: 100px;
+      height: 30px;
+  }

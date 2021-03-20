@@ -6,7 +6,7 @@ import './Header.css'
 import { UserContext } from '../../App';
 
 const Header = () => {
-    const [loggedInuser,setLoggedInuser]=useContext(UserContext)
+    const [loggedInuser,setLoggedInuser]=useContext(UserContext);
     return (
         
         <div  className="header">
@@ -16,7 +16,7 @@ const Header = () => {
             <Link to="/Blog">Blog</Link>
             <Link to="/Contact">Contact</Link>
             <Link>{loggedInuser.name}</Link>
-            <Button variant="danger"><Link to="/Login" className="">Login</Link></Button>{' '}
+            <Button className="button" variant="danger"><Link to="/Login" >Login</Link></Button>{' '}
             
             
           

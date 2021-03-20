@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import RiderData from '../../riderData.json'
 import Home from '../Home/Home';
-import './Rider.css'
+// import './Rider.css'
 
 const Rider = () => {
     const [riders,setRider]=useState([]);
@@ -11,11 +11,9 @@ const Rider = () => {
     },[])
         // console.log(riders);
     return (
-        <div className="row" style={{display:'flex'}} >
-            
-            
+        <div style={{display:'flex'}} >
             {
-              riders.map(Rider=><Home Rider={Rider}></Home>) 
+              riders.map(Rider => <Home Rider={Rider}></Home>) 
             }
         </div>
     );

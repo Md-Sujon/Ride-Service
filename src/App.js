@@ -11,9 +11,11 @@ import {
   useParams
 } from "react-router-dom";
 import Login from './component/Login/Login';
-import Destination from './component/Destination/Destination';
+
 import { createContext, useState } from 'react';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
+import Destination from './component/Destination/Destination';
+
 
 
 export const UserContext=createContext();
@@ -24,14 +26,9 @@ function App() {
     
 
     
-  <UserContext.Provider value={[loggedInuser , setLoggedInuser]}>
-    
-    
-
+  <UserContext.Provider value={[loggedInuser,setLoggedInuser]}>
 
      <Router  >
-     
-      
      <Header></Header>
         <Switch>
         
@@ -40,8 +37,7 @@ function App() {
           </Route>
 
           <Route path="/Home">
-          <Home></Home>
-          <Rider></Rider>
+            <Rider></Rider>
           </Route>
 
           <Route path="/Login">
@@ -56,10 +52,6 @@ function App() {
         </Switch>
     </Router>
     </UserContext.Provider>
-
-  
-
-
   );
 }
 

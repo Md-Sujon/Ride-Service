@@ -1,14 +1,27 @@
-/* .MainCard{
-    padding:50px;
-    border: 2px solid gray;
-    margin: 35px;
-    text-align: center;
-} */
+.rider{
+    margin: 20px;
+    border: 10px solid gray;
+    width: 250px;
+    height: 250px;
+    text-align:center;
+    padding: 30px;
+    background-color: rgba(199, 199, 199, 0.589);  
+    margin-top: 150px;  
+}
 
-/* .MainCard img{
-    width:200px;
-    height:150px;
-} */
-/* .MainCard a{
+.rider img{
+    width: 200px;
+   
+}
+.background{
+    background-image: url('../images/Bg.png');
+    background-size:1200px;
+    width: 1200px;
+    height:700px;
+    /* background-size: cover; */
     
-}  */
+   
+}
+/* .background image{
+    background-repeat: no-repeat;
+} */
