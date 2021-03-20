@@ -1,25 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './Home.css'
 
 
+
 const Home = (props) => {
-    const {name,image}=props.Rider||{};
+    const {name,photo}=props.Rider||{};
+    const history=useHistory()
     // console.log(props);
+
+    const handelClick=()=>{
+      history.push('/destination')
+    }
     return (
+   
+<div className="MainCard" onClick={handelClick}>
 
-
-        <div>
-<Link to="/login">
-       
-        <div className='all'>
+        {/* <Link to="/Login"> */}
             
-            <h1>{name}</h1>
-               <img src={image} alt={" "}/>
-              </div>
-        </Link> 
-</div>
-        
+           <div>
+             <h1>{name}</h1>
+               
+               <img src={photo} alt=''/> 
+                </div>
+                {/* </Link> */}
+            
+               </div> 
     );
 };
 
