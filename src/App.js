@@ -21,21 +21,16 @@ import Destination from './component/Destination/Destination';
 export const UserContext=createContext();
 
 function App() {
-  const [loggedInuser,setLoggedInuser]=useState({});
+  const [loggedInUser,setLoggedInUser]=useState({});
   return (
     
 
     
-  <UserContext.Provider value={[loggedInuser,setLoggedInuser]}>
+  <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
 
      <Router  >
      <Header></Header>
         <Switch>
-        
-        <Route exact path="/">
-            <Home />
-          </Route>
-
           <Route path="/Home">
             <Rider></Rider>
           </Route>
@@ -44,11 +39,13 @@ function App() {
             <Login></Login>
           </Route>
 
-          <PrivateRoute path="/Destination">
+          <PrivateRoute path="/Destination/:key">
             <Destination></Destination>
           </PrivateRoute>
-          
-          
+
+          <Route exact path="/">
+            <Home/>
+          </Route>
         </Switch>
     </Router>
     </UserContext.Provider>

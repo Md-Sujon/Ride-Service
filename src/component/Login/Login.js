@@ -12,7 +12,7 @@ if (!firebase.apps.length) {
 
 function LogIn() {
 
-  const [loggedInuser, setLoggedInuser] = useContext(UserContext);
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const history = useHistory();
   const location = useLocation();
 
@@ -28,7 +28,7 @@ function LogIn() {
     password: '',
     photo: ''
   })
-  var fbProvider = new firebase.auth.FacebookAuthProvider();
+  const fbProvider = new firebase.auth.FacebookAuthProvider();
   const provider = new firebase.auth.GoogleAuthProvider();
 
   const fbHandle = () => {
@@ -41,15 +41,11 @@ function LogIn() {
 
         var accessToken = credential.accessToken;
         setUser(result)
-        setLoggedInuser(result)
+        setLoggedInUser(result)
         history.replace(from)
       })
       .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        var email = error.email;
-        var credential = error.credential;
-
+        console.log(error);
       });
   }
 
@@ -67,7 +63,7 @@ function LogIn() {
           photo: photoURL
         }
         setUser(signInUser)
-        setLoggedInuser(signInUser)
+        setLoggedInUser(signInUser)
         history.replace(from)
       })
       .catch(err => { })
@@ -138,7 +134,7 @@ function LogIn() {
           newUserInfo.error = '';
           newUserInfo.success = true;
           setUser(newUserInfo);
-          setLoggedInuser(newUserInfo)
+          setLoggedInUser(newUserInfo)
           history.replace(from)
           console.log(res)
           console.log('sing in user info', res.user);
@@ -190,7 +186,7 @@ function LogIn() {
       <button className="mainbtn" onClick={handleClick}>{newUser ? 'Sign up' : 'Sign in'}</button>
     </div>
       <div className="google"> 
-        <h1>Apni ka vai?</h1>
+        <h1>Google/Facebook SingIn</h1>
         {
         user.isSignedIn ? <button onClick={handleSignOut} className="googlebtn">sign out</button> :
           <button className="googlebtn" onClick={handleSignIn}>sign in</button>

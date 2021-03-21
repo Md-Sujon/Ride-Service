@@ -1,22 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import RiderData from '../../riderData.json'
+// import React, from 'react';
+// import RiderData from '../../riderData.json'
+import RiderData from '../fakeData/FackData'
 import Home from '../Home/Home';
 // import './Rider.css'
 
 const Rider = () => {
-    const [riders,setRider]=useState([]);
 
-    useEffect(()=>{
-           setRider(RiderData)
-    },[])
-        // console.log(riders);
     return (
         <div style={{display:'flex'}} >
             {
-              riders.map(Rider => <Home Rider={Rider}></Home>) 
+              RiderData.map(Rider => <Home Rider={Rider}></Home>) 
             }
         </div>
     );
-};
 
+        };
 export default Rider;

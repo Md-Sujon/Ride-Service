@@ -20,3 +20,31 @@
 .button{
     margin-left: 50px;
 }
+
+@media screen and (max-width: 480px) {
+    .header{
+        
+        padding: 5px;
+        background-color: rgb(122, 210, 226);
+        margin-right: 10px;
+        width:auto;
+      /* margin-left: 50px; */
+        /* display: inline; */
+        overflow: hidden;
+    }
+    .header a{
+        font-size:small;
+        padding: 15px;
+        text-decoration: none;
+        /* overflow: hidden; */
+        
+    }
+    .button{
+        margin-left: 10px;
+    }
+.Company_name{
+    width: 30px;
+    height: 20px;
+}
+
+  }
