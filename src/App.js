@@ -15,6 +15,7 @@ import Login from './component/Login/Login';
 import { createContext, useState } from 'react';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 import Destination from './component/Destination/Destination';
+import Error from './component/Destination/Error/Error';
 
 
 
@@ -28,9 +29,14 @@ function App() {
     
   <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
 
-     <Router  >
+     <Router >
      <Header></Header>
         <Switch>
+
+        <Route exact path="/">
+            <Rider></Rider>
+          </Route>
+
           <Route path="/Home">
             <Rider></Rider>
           </Route>
@@ -43,9 +49,11 @@ function App() {
             <Destination></Destination>
           </PrivateRoute>
 
-          <Route exact path="/">
-            <Home/>
+          <Route path="*">
+            <Error></Error>
           </Route>
+
+      
         </Switch>
     </Router>
     </UserContext.Provider>

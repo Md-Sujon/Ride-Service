@@ -15,7 +15,7 @@ const Header = () => {
             <Link to="/Home">Home</Link>
             <Link to="/Destination/key">Destination</Link>
             <Link>{loggedInuser.name}</Link>
-            <Button className="button" variant="danger"><Link to="/Login" >Login</Link></Button>{' '}
+            <Button className="button" style={{marginRight:"100px"}} variant="danger"><Link to="/Login" >Login</Link></Button>{' '}
             
             
           
